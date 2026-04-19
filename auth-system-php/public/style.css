@@ -1,0 +1,126 @@
+/* style.css */
+
+/* 1. Ustawienia globalne dla całej strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    /* Jasnoszary kolor tła */
+    color: #333;
+    /* Ciemny kolor tekstu */
+    display: flex;
+    justify-content: center;
+    /* Wyśrodkowanie w poziomie */
+    align-items: center;
+    /* Wyśrodkowanie w pionie */
+    min-height: 100vh;
+    /* Pełna wysokość widoku */
+    margin: 0;
+}
+
+/* 2. Stylizacja głównego kontenera (formularz/strona) */
+.container {
+    background-color: #ffffff;
+    /* Białe tło kontenera */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* Delikatny cień */
+    width: 100%;
+    max-width: 400px;
+    /* Maksymalna szerokość dla formularzy */
+    text-align: center;
+}
+
+/* 3. Stylizacja nagłówków */
+h2 {
+    color: #007bff;
+    /* Niebieski kolor dla nagłówków */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* 4. Stylizacja pól formularza i etykiet */
+label {
+    display: block;
+    /* Etykieta zajmuje całą linię */
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Padding i border wliczane są do szerokości */
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    /* Zmiana koloru ramki po kliknięciu */
+    outline: none;
+}
+
+/* 5. Stylizacja przycisku */
+button {
+    background-color: #28a745;
+    /* Zielony kolor przycisku */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+    /* Ciemniejszy zielony po najechaniu */
+}
+
+/* 6. Stylizacja wiadomości i linków */
+/* Błędy (z index.php/register.php) */
+ul {
+    list-style: none;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dc3545;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Linki rejestracji/logowania */
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 15px;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Stylizacja dla małego tekstu pod polem hasła w rejestracji */
+small {
+    display: block;
+    text-align: left;
+    color: #6c757d;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
